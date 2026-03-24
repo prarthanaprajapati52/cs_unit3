@@ -1,0 +1,33 @@
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
+
+public class RectangleExample extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        Rectangle r = new Rectangle();
+
+        r.setX(100);
+        r.setY(80);
+        r.setWidth(200);
+        r.setHeight(100);
+        r.setFill(Color.LIGHTBLUE);
+        r.setStroke(Color.BLACK);
+
+        Pane root = new Pane();
+        root.getChildren().add(r);
+
+        Scene scene = new Scene(root, 400, 300);
+        primaryStage.setTitle("Rectangle in JavaFX");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
