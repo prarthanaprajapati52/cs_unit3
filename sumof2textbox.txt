@@ -1,0 +1,7 @@
+//sum of 2 textbox
+public void Button_click(ob...)
+{
+	int a=Convert.ToInt32(textbox1.Text);
+	int b=Convert.ToInt32(textbox2.Text);
+	MessageBox.Show("bac"+(a+b));
+}

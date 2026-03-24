@@ -1,0 +1,5 @@
+//back color
+private void button1_click(object.....)
+{
+	this.Backcolor= color.fromArgb(255,255,200);
+}

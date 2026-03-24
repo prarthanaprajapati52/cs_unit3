@@ -1,0 +1,17 @@
+//click event 
+private void button1_click (object sender EventArgs e)
+{
+	DialogResult res=MessageBox.Show("Hello","bca",MessageBoxButtons.OkCancel);
+	if(res==DialogResult.Ok)
+	{
+		MessageBox.Show("you click OK button");
+	}
+	else
+	{
+		MessageBox.Show("you click Cancel button");
+	}
+	private void Button2_Click(object sender EventArgs e)
+	{
+		label2.Text=textBox1.Text;
+	}
+}

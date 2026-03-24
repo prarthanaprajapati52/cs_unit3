@@ -1,0 +1,12 @@
+//radiobutton
+private void button1......
+{
+	if(radiobutton1.checked)
+	{
+		MessageBox.Show(""+radiobutton1.Text);
+	}	
+	else
+	{
+		MessageBox.Show(""+radiobutton2.Text);
+	}
+}

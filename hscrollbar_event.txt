@@ -1,0 +1,7 @@
+//scroll event (hscrollbar)
+private void hscrollbar1_scroll(ob...)
+{
+	int v=hscrollbar1.value;
+	label1.Text=v.Tostring();
+	this.Backcolor=color.FromArgb(0,0,hscrollbar1.value);
+}

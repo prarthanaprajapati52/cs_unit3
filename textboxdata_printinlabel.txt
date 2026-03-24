@@ -1,0 +1,6 @@
+//textbox data print in label
+private void button2_click (ob..)
+{
+	label2.Text=textbox1.Text;
+	label2.backColor=color.Red;
+}

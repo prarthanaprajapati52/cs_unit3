@@ -1,0 +1,7 @@
+//runtime control
+public form1()
+{
+	InitialComponent():
+	TextBox t =new TextBox();
+	this.Controls.Add(t);
+}
