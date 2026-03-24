@@ -1,0 +1,32 @@
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
+
+public class CircleExample extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        Circle c = new Circle();
+
+        c.setCenterX(150);
+        c.setCenterY(150);
+        c.setRadius(80);
+        c.setFill(Color.YELLOW);
+        c.setStroke(Color.BLACK);
+
+        Pane root = new Pane();
+        root.getChildren().add(c);
+
+        Scene scene = new Scene(root, 300, 300);
+        primaryStage.setTitle("Circle in JavaFX");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
